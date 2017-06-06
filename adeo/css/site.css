@@ -1,0 +1,341 @@
+/*	'overflow: hidden' is used throughout this CSS to make outer DIVs cover all internal floated elements	*/
+/*	This CSS conains some CSS3.  If a browser cannot use it, it ignores it and uses th fallbacks.	*/
+/*	There are some simple IE workaround but I cannot really test for IE as this site was designed on a Mac	*/
+
+body
+{
+	background-image: url(../images/siteBackground.jpg);
+	background-repeat: repeat-y;
+}
+
+
+h2,
+h3,
+p
+{
+	font-family: 'Oxygen', sans-serif;	/*	Font from Google	*/
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+h3
+{
+	text-transform: none;
+}
+
+p
+{
+	text-transform: none;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#outer
+{
+	width: 1108px;
+	background-image: url(../images/contentBackground.png);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#content
+{
+	width: 940px;
+	background-color: #C00;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header
+{
+	width: 100%;	/*	Percentages are used so that the site can be be made responsive later	*/
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+#header #logo
+{
+	height: 86px;
+	width: 218px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header #mainMenu ul
+{
+	/*	CSS3 Gradient	*/
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fafafa 0%, #ececec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fafafa 0% #ececec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fafafa 0%, #ececec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fafafa 0%, #ececec 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fafafa 0%, #ececec 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ececec',GradientType=0 ); /* IE6-8 */
+	
+	width: 100%;
+}
+
+#header #mainMenu li
+{
+	padding: 10px;
+	width: 14%;
+}
+
+#header #mainMenu li a
+{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	padding: 0;	/*	Override the superfish default	*/
+}
+#header #spacer
+{
+	width: 100%;
+	height: 10px;
+	background-color: #d2d2d2;
+	margin-top: 40px;	/*	Aligns the spacer under the menu	*/
+}
+
+#header #slider img
+{
+	margin-top: -10px;	/*	Move image up a bit	*/
+}
+
+#main
+{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+#main h2
+{
+	color: #969696;
+	text-transform: none;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#main ul h2
+{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000000;
+	margin-left: 23%;
+	margin-top: -35px;
+}
+
+#main ul
+{
+	list-style: none;
+	padding: 0px;
+	overflow: hidden;
+}
+
+ul#leadingBrands li
+{
+	float: left;
+	margin-right: 15px;
+}
+
+u#leadingBrandsl li.end
+{
+	margin-right: 0px;
+}
+
+ul#links li
+{
+	/*	CSS3 Gradient	*/
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0% #f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%, #f7f7f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-8 */
+
+	float: left;
+	width: 33%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+ul#links li h3,
+ul#links li p
+{
+	padding: 0 18px;
+}
+	
+ul#links #clientsSay
+{
+	margin-top: 5px;	/*	Lines up the image	*/
+}
+
+ul#links #caseStudies
+{
+	margin-top: 6px;	/*	Lines up the image	*/
+}
+
+.moreButton
+{
+	margin-left: 66%;
+	margin-top: 10px;
+}
+
+#footer
+{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer ul
+{
+	list-style: none;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#footer h2
+{
+	color: #656565;
+	font-size: 14px;
+}
+
+#footer h3
+{
+	color: #7c7c7c;
+	font-size: 18px;
+}
+
+#footer #topFooter #other span
+{
+	color: #e06d4a;
+	font-size: 23px;
+}
+
+#footer li,
+#footer p,
+#footer form
+{
+	color: #5a5a5a;
+	font-size: 12px;
+}
+
+#footer #topFooter
+{
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+#footer #topFooter div
+{
+	overflow: hidden;
+	float: left;
+}
+
+#footer #topFooter #company
+{
+	padding-left: 50px;
+}
+
+#footer #topFooter #other
+{
+	float: right;
+}
+
+#footer #topFooter h3,
+#footer #topFooter p,
+#footer #topFooter form
+{
+	clear: both;
+	float: right;
+}
+
+#footer #topFooter p
+{
+	margin-bottom: 4px;
+	margin-top: 0;
+}
+
+#footer #topFooter form
+{
+	clear: both;
+	float: right;
+}
+
+#footer #topFooter form #mailingListEmail
+{
+	border: solid 1px #b3b3b3;
+	width: 289px;
+	height: 16px;
+	background-color: #ececec;
+	color: #5b5b5b;
+}
+
+#footer #topFooter form #mailingListSubmit
+{
+	/*	CSS3 Gradient	*/
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #dbdbdb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0% #dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fefefe 0%, #dbdbdb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%, #dbdbdb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%, #dbdbdb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-8 */
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #494444;
+	width: auto;
+	border: solid 1px #b3b3b3;
+}
+
+#footer #bottomFooter
+{
+	clear: both;
+	overflow: hidden;
+}
+
+#footer #bottomFooter div
+{
+	float: left;
+}
+
+#footer #bottomFooter #social
+{
+	position: relative;
+	left: 24%;
+}
+
+#footer #bottomFooter #social ul li
+{
+	float: left;
+}
+
+#footer #bottomFooter #copyright
+{
+	float: right;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
